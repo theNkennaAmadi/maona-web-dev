@@ -15,11 +15,16 @@ tlMute.to("#unmute", { yPercent: -100, duration: 0.3 }, "<");
 
 filmWatch.addEventListener("click", () => {
   const tl = gsap.timeline();
-  tl.to("#film-watch, #film-title", {
-    yPercent: 120,
-    duration: 1,
-    ease: "power4.out",
-  });
+  tl.to(".film-controls", { pointerEvents: "auto" });
+  tl.to(
+    "#film-watch, #film-title",
+    {
+      yPercent: 120,
+      duration: 1,
+      ease: "power4.out",
+    },
+    "<"
+  );
   tl.fromTo(
     ".film-bg-img img",
     {
