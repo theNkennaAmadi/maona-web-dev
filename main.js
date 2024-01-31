@@ -134,37 +134,6 @@ words.map((word) => {
   wrapper.appendChild(word);
 });
 
-let tlNav = gsap.timeline({ paused: true });
-tlNav.to(".nav", { borderRadius: "0.5rem", duration: 0.5 });
-tlNav.fromTo(
-  ".nav-projects",
-  { clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" },
-  { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1 }
-);
-tlNav.to(
-  ".nav-menu-icon",
-  {
-    display: "flex",
-    x: "2.25rem",
-    duration: 0.75,
-    ease: "expo.inOut",
-  },
-  "<0.1"
-);
-
-const showFeaturedNav = () => {
-  window.setTimeout(() => {
-    tlNav.timeScale(1);
-    tlNav.play();
-  }, 10000);
-};
-showFeaturedNav();
-
-document.querySelector(".nav-menu-icon").addEventListener("click", () => {
-  tlNav.timeScale(1.5);
-  tlNav.reverse();
-});
-
 /**
  * Text fade up animation
  */
