@@ -7,36 +7,9 @@ const startScroll = () => {
   lenis.start();
 };
 
-/*
-const homeHeroText = [
-  ...document
-    .querySelector(".home-hero-grid")
-    .querySelectorAll("[data-splitting]"),
-];
-const tlHomeHero = gsap.timeline({ paused: true });
-tlHomeHero.from(".home-hero-visual", { filter: "blur(4px)" });
-homeHeroText.forEach((text) => {
-  gsap.set(text.querySelectorAll(".word"), { opacity: 0, y: "120%" });
-  tlHomeHero.fromTo(
-    text.querySelectorAll(".word"),
-    { y: "120%" },
-    { opacity: 1, y: "0%" },
-    "<"
-  );
-});
-
- */
-
 const date = new Date();
 const year = date.getFullYear();
 document.querySelector("#footer-year").innerHTML = Number(year);
-
-gsap.to(".nav-film-info", {
-  xPercent: -112,
-  repeat: -1,
-  duration: 6,
-  ease: "linear",
-});
 
 window.addEventListener("load", () => {
   if (localStorage.getItem("hasCodeRunBefore") === null) {

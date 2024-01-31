@@ -21,6 +21,13 @@ window.addEventListener("load", () => {
 
 let mobileMenuState = false;
 
+gsap.to(".nav-film-info", {
+  xPercent: -112,
+  repeat: -1,
+  duration: 6,
+  ease: "linear",
+});
+
 let mm = gsap.matchMedia();
 console.log("hello");
 
