@@ -91,16 +91,20 @@ ScrollTrigger.create({
   animation: tlHeroScroll,
 });
 
+let mm2 = gsap.matchMedia();
+
 const tlPhoto = gsap.timeline({ paused: true });
-tlPhoto.to(".films-photos-item:nth-child(even)", {
-  yPercent: -20,
-  duration: 0.5,
+mm2.add("(max-width: 479px)", () => {
+  tlPhoto.to(".films-photos-item:nth-child(even)", {
+    yPercent: -20,
+    duration: 0.5,
+  });
+  tlPhoto.to(
+    ".films-photos-item:nth-child(odd)",
+    { yPercent: 20, duration: 0.5 },
+    "<"
+  );
 });
-tlPhoto.to(
-  ".films-photos-item:nth-child(odd)",
-  { yPercent: 20, duration: 0.5 },
-  "<"
-);
 
 ScrollTrigger.create({
   trigger: ".films-photos-wrapper",
