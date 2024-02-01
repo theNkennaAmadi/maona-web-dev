@@ -94,7 +94,7 @@ ScrollTrigger.create({
 let mm2 = gsap.matchMedia();
 
 const tlPhoto = gsap.timeline({ paused: true });
-mm2.add("(max-width: 479px)", () => {
+mm2.add("(min-width: 479px)", () => {
   tlPhoto.to(".films-photos-item:nth-child(even)", {
     yPercent: -20,
     duration: 0.5,
