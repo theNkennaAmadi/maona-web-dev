@@ -1,0 +1,14 @@
+global.js
+  h_5e6a9bd11b8737 10-11,55,66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "9ebc1feedfd11d181933dd6f8a925f697470cb66",
+  "prompts": {},
+  "humans": {
+    "h_5e6a9bd11b8737": {
+      "author": "theNkennaAmadi <nkenna@theblackpepperstudio.com>"
+    }
+  }
+}
