@@ -1,0 +1,28 @@
+landing.js
+  s_f5a8dea3b29101::t_9370b5e53ac9fe 2-3,5-6
+  s_f5a8dea3b29101::t_8007b545042827 8
+  s_f5a8dea3b29101::t_9245c44f781e60 4
+  s_f5a8dea3b29101::t_624a89ef416852 1
+  s_f5a8dea3b29101::t_745297865a8374 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "859f63da4c43464029eef15124dc8946ea720120",
+  "prompts": {},
+  "humans": {
+    "h_5e6a9bd11b8737": {
+      "author": "theNkennaAmadi <nkenna@theblackpepperstudio.com>"
+    }
+  },
+  "sessions": {
+    "s_f5a8dea3b29101": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1784813886070",
+        "model": "unknown"
+      },
+      "human_author": "theNkennaAmadi <nkenna@theblackpepperstudio.com>"
+    }
+  }
+}
